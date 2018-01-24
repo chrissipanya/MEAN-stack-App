@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var mongojs = require('mongojs')
-var db = mongojs();
+var db = mongojs('list', ['list']);
 
 function onReq(req, res){
 	console.log("I got a GET request")
